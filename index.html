@@ -4,44 +4,257 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2nd Assignment</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;800;900&family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header>
-        <nav class="container">
-            <div class="title">
-                <img src="Images/Group 40071 (2).png" alt="">
-                <h1>Hero <span>Travel</span></h1>
-            </div>
-            <div class="nav-items">
-                <ul>
-                    <li><a href="#" class="home">Home</a></li>
-                    <li><a href="#">Packages</a></li>
-                    <li><a href="#">Testimonial</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <section class="banner-container container">
-            <div class="banner">
-                <div class="sub-banner">
-                    <h1>Explore Your Travel</h1>
-                    <p>Embark on a journey filled with breathtaking landscapes, vibrant cultures, and unforgettable experiences. Let the world <br>unfold before you as you explore diverse destinations.</p>
+   <header class="container">
+    <nav>
+        <div class="logo">
+            <img src="./Images/Group 40071 (2).png" alt="Logo">
+            <h1>Vista <span>Ventures</span></h1>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="#" class="home">Home</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="#">Testimonial</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <i class="fa-solid fa-bars hamburger"></i>
+        </div>
+    </nav>
+   </header>
+   <main class="container">
+        <section class="banner">
+                <div class="explore-container">
+                    <h1>
+                        Explore Your Travel
+                    </h1>
+                    <p>
+                        Discover new places, cultures, and flavors on your travels, creating lasting memories along the way.
+                    </p>
                     <div class="selection">
-                        <select name="" class="place"><option value="">Where go</option></select>
-                        <select name="" id="time"><option value="">When</option></select>
-                        <select name="" id="type"><option value="">Select Type</option></select>
-                        <button><i class="fa-solid fa-magnifying-glass"><option value=""></option></i>Find Now</button>
+                        <select name="" id="selection1">
+                            <option value="">Where to go</option>
+                            <option value="">Thailand</option>
+                            <option value="">Switzerland</option>
+                        </select>
+                        <select name="" id="selection1">
+                            <option value="">When</option>
+                            <option value="">Season-1</option>
+                            <option value="">Season-2</option>
+                        </select>
+                        <select name="" id="selection1">
+                            <option value="">Select Type</option>
+                            <option value="">Package-1</option>
+                            <option value="">Package-2</option>
+                        </select>
+                        <button>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            Find Now
+                     </button>
                 </div>
+            </div>
+        </section>
+        <section class="popular">
+            <div class="popular-tour">
+                <h1>Our Popular Tours</h1>
+                <p>Our popular tour, widely cherished by adventurous souls and culture enthusiasts alike, offers a captivating expedition through enchanting destinations.
+                </p>
+                <ul>
+                    <li>Morning Routine Must-Haves </li>
+                    <li>Netflix and Chill Necessities </li>
+                    <li>Weekend Bliss Essentials</li>
+                </ul>
+                <p>let the rhythmic heartbeat of diverse cities become the soundtrack to your unforgettable journey.</p>
+                <button>
+                    Read More
+                </button>
+            </div>
+            <img src="./Images/Rectangle 4.png" alt="mountain" class="mountain">
+        </section>
+        <section class="destination">
+            <h1>Choose Your Destination</h1>
+            <p>Select your destination from an array of enticing possibilities, each beckoning with its own unique allure and experiences:</p>
+            <div class="destinationImages">
+                <div class="r1">
+                    <div class="destinationImage" id="image1"> <span>Maldives</span></div>
+                    <div class="destinationImage" id="image2"><span>Indonesia</span></div>
+                </div>
+               <div class="r2">
+                <div class="destinationImage" id="image3"> <span>SriLanka</span> </div>
+                <div class="destinationImage" id="image4"> <span>North America</span> </div>
+                <div class="destinationImage" id="image5"> <span>Kashmir</span> </div>
+               </div>
+               <div class="r3">
+                <div class="destinationImage" id="image6"> <span>Bangladesh</span> </div>
+                <div class="destinationImage" id="image7"> <span>Bandarban</span> </div>
+               </div>
+            </div>
+        </section>
+        <section class="choose">
+            <h1>
+                Why Choose Us
+            </h1>
+            <p>Choose us for an unparalleled commitment to excellence, where every interaction is a testament to our dedication to customer satisfaction. 
+            </p>
+            <div class="choose-container">
+                <div class="choose-r1">
+                    <div class="container-1 container-item">
+                        <img src="./Images/hotel 1.png" alt="">
+                        <h1>Handpicked Hotels</h1>
+                        <p>Explore the epitome of hospitality with our carefully curated selection of handpicked hotels, 
+                        </p>
+                    </div>
+                    <div class="container-2 container-item">
+                        <img src="./Images/map 1.png" alt="">
+                        <h1>World Class Service</h1>
+                        <p>Experience the pinnacle of hospitality with our commitment to world-class service</p>
+                    </div>
+                </div>
+                <div class="choose-r2">
+                    <div class="container-3 container-item">
+                        <img src="Images/price-tag 1.png" alt="">
+                        <h1>Best Price Guarantee</h1>
+                        <p>Rest assured with our Best Price Guarantee, a commitment that ensures you receive the most competitive rates for your chosen experience. </p>
+                    </div>
                 </div>
             </div>
 
         </section>
-    </header>
+        <section class="discount">
+            <h1>Deals & Discounts</h1>
+            <p>Please Check our pakages There you will get discount </p>
+            <div class="triplediv div1">
+               <div class="div-container">
+                <h5>
+                    <span class="1st span"><img src="./Images/Frame.png" alt="">
+                    7 Day / 6 Night </span>
+                    <img src="./Images/Frame (1).png" alt="">
+                    <span>Max : 10 </span>
+                    <img src="./Images/Frame (2).png" alt="">
+                    <span>Malaysia</span>
+                </h5>
+                <h2>Tour To Satorini</h2>
+                <p>This package is great for you—give it a try, and I'm confident you won't be let down. </p>
+                <h3>Price: $1300-$1500</h3>
+
+                <button>
+                    Book Now
+                </button>
+               </div>
+
+
+            </div>
+            <div class="triplediv div2">
+                <div class="div-container">
+                    <h5>
+                        <span class="1st span"><img src="./Images/Frame.png" alt="">
+                            7 Day / 6 Night </span>
+                        <img src="./Images/Frame (1).png" alt="">
+                        <span>Max : 10 </span>
+                        <img src="./Images/Frame (2).png" alt="">
+                        <span>Malaysia</span>
+                    </h5>
+                    <h2>Tour To Satorini</h2>
+                    <p>This package is great for you—give it a try, and I'm confident you won't be let down.</p>
+                    <h3>Price: $1300-$1500</h3>
+    
+                    <button>
+                        Book Now
+                    </button>
+                   </div>
+            </div>
+            <div class="triplediv div3">
+                <div class="div-container">
+                    <h5>
+                        <span class="1st span"><img src="./Images/Frame.png" alt="">
+                            7 Day / 6 Night </span>
+                        <img src="./Images/Frame (1).png" alt="">
+                        <span>Max : 10 </span>
+                        <img src="./Images/Frame (2).png" alt="">
+                        <span>Malaysia</span>
+                    </h5>
+                    <h2>Tour To Satorini</h2>
+                    <p>This package is great for you—give it a try, and I'm confident you won't be let down.</p>
+                    <h3>Price: $1300-$1500</h3>
+    
+                    <button>
+                        Book Now
+                    </button>
+                 </div>
+                </div>
+     <button>See All Packages</button>
+
+        </section>
+        <section class="simple">
+            <div class="perfect-left">
+                <h1 class="perfectHeaderOne">A Simple Perfect Place To Get Lost</h1>
+                <p>Some peoples quote about traveling </p>
+                <ul>
+                    <li>It is better to see something once than to hear about it a thousand times.</li>
+                    <li>Travel is fatal to prejudice, bigotry, and narrow-mindedness.</li>
+                </ul>
+                <button>
+                    See More
+                </button>
+            </div>
+            <video src="./videos/Hill Views Of Bandarban - Bangladesh - Short Video - 03.mp4" controls >
+        </section>
+        <section class="news-letter">
+            <div class="news-letterForm">
+                <form >
+                    <h1>
+                        Newsletter
+                    </h1>
+                    <p>Get your daily dose of travel news & tips. Sign up today!</p>
+                    <hr>
+                    <input type="text" placeholder="Enter your name">
+                    <input type="text" placeholder="Enter your email">
+                    <input type="submit" value="Subscribe">
+
+                </form>
+            </div>
+            <div class="discountSeventyPercent">
+                <div class="seventyPercent">
+                    <h5>Travel.com</h5>
+                    <h2>Save up to 70%</h2>
+                </div>
+            </div>
+        </section>
+        <section class="partners container">
+            <h1>Our Affiliates <br>& partners</h1>
+            <ul>
+                <li>Hotels and Accommodations <i class="fa-solid fa-hotel"></i></li>
+                <li>Airlines <i class="fa-solid fa-plane-circle-check"></i></li>
+                <li>Travel Insurance Providers <i class="fa-solid fa-house-chimney-crack"></i></li>
+                <li>Technology Partners <i class="fa-brands fa-watchman-monitoring"></i></li>
+                <li>Car Rental Companies <i class="fa-solid fa-car"></i></li>
+            </ul>
+        </section>
+   </main>
+   <footer>
+            <div class="container">
+                <div class="footer-logo">
+                    <img src="./Images/Group 40071 (2).png" alt="Logo">
+                    <h1>Vista  <span>Ventures</span></h1>
+                </div>
+            
+                <p>
+                    Here are our contact information  Happy Traveling 
+                </p>
+                <div class="footer-links">
+                    <a href="twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="github.com"><i class="fa-brands fa-github"></i></a>
+                    <hr>
+                </div>
+                <p class="rights">2017, All Rights Reserved.</p>
+            </div>
+   </footer>
+
 </body>
 </html>
